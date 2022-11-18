@@ -16,6 +16,21 @@ public class Estru {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        public class SelectionSort {
+
+
+	public void sortArray(int[] array) {
+		for (int i = array.length - 1; i > 0; i--) {
+			int maxValue = 0;
+			for (int j = 0; j < i; j++) {
+				if (array[j + 1] > array[maxValue]) {
+					maxValue = j + 1;
+				}
+			}
+			swap(array, i, maxValue);
+			printArray(array);
+		}
+	}
     }
     
 }
